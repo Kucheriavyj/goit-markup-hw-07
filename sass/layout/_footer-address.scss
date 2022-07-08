@@ -1,0 +1,35 @@
+.footer {
+    background: #2F303A;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.address {
+    display: block;
+    margin-right: 70px;
+    &_list {
+            margin-top: 20px;
+        }
+    &_link {
+            @include font (400, 14px, 1.71, 00.03em);
+            margin-bottom: 9px;
+            font-family: 'Roboto';
+            font-style: normal;
+            color: #FFFFFF;
+        }
+    &_info {
+            @include font (400, 14px, 1.71, 00.03em);
+            margin-bottom: 9px;
+            font-family: 'Roboto';
+            font-style: normal;
+            color: rgba(255, 255, 255, 0.6);
+                }
+}
+
+.address_item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.footer_logo-accent {
+    color: #FFFFFF;
+}

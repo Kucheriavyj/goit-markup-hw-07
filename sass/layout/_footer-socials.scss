@@ -1,0 +1,42 @@
+.socials {
+    padding-top: 12px;
+    &_list {
+            display: flex;
+            justify-content: start;
+        }
+    &_title {
+            @include font (700, 14px, 1.14, 00.03em);
+            display: flex;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+        }
+    &_svg {
+            fill: #FFFFFF;
+        }
+    &_item {
+            width: 44px;
+            height: 44px;
+        }
+}
+.socials_link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background-color: $btn-hover-color;
+        outline: none;
+    }
+}
+
+
+.socials_item:not(:last-child) {
+    margin-right: $typicalMargin;
+}
