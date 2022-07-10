@@ -1,25 +1,25 @@
 .socials {
     padding-top: 12px;
-    &_list {
+    &__list {
             display: flex;
             justify-content: start;
         }
-    &_title {
+    &__title {
             @include font (700, 14px, 1.14, 00.03em);
             display: flex;
             margin-bottom: 20px;
             text-transform: uppercase;
             color: #FFFFFF;
         }
-    &_svg {
+    &__svg {
             fill: #FFFFFF;
         }
-    &_item {
+    &__item {
             width: 44px;
             height: 44px;
         }
 }
-.socials_link {
+.socials__link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -36,7 +36,6 @@
     }
 }
 
-
-.socials_item:not(:last-child) {
+.socials__item:not(:last-child) {
     margin-right: $typicalMargin;
 }

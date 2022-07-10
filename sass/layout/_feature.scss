@@ -1,52 +1,51 @@
 .feature {
     padding-top: 94px;
-    &_list {
+    &__list {
             display: flex;
             justify-self: center;
         }
-    &_item {
+    &__item {
             width: 270px;
         }
-    &_title {
+    &__title {
             @include font (700, 14px, 1.14, 00.03em);
             margin-bottom: $typicalMargin;
             text-transform: uppercase;
             color: #212121;
         }
-    &_text {
+    &__text {
             @include font (400, 14px, 1.71, 00.03em);
             color: #757575;
         }
 }
 
-.feature_item + .feature_item {
+.feature__item + .feature__item {
     margin-left: 30px;
 }
 
-.feature_item::before {
+.feature__item::before {
     display: block;
     content: "";
     margin-bottom: 30px;
     height: 120px;
-
     border-radius: 4px;
     background-repeat: no-repeat;
     background-position: center;
     background-color: #F5F4FA;
 }
 
-.feature_item:nth-child(1)::before {
+.feature__item:nth-child(1)::before {
     background-image: url(../images/icon.svg/radar.svg);
 }
 
-.feature_item:nth-child(2)::before {
+.feature__item:nth-child(2)::before {
     background-image: url(../images/icon.svg/time.svg);
 }
 
-.feature_item:nth-child(3)::before {
+.feature__item:nth-child(3)::before {
     background-image: url(../images/icon.svg/diagram.svg);
 }
 
-.feature_item:nth-child(4)::before {
+.feature__item:nth-child(4)::before {
     background-image: url(../images/icon.svg/astronaut.svg);
 }

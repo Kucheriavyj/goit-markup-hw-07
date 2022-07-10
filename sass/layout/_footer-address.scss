@@ -2,22 +2,25 @@
     background: #2F303A;
     padding-top: 60px;
     padding-bottom: 60px;
+    &__logo-accent {
+            color: #FFFFFF;
+        }
 }
 
 .address {
     display: block;
     margin-right: 70px;
-    &_list {
+    &__list {
             margin-top: 20px;
         }
-    &_link {
+    &__link {
             @include font (400, 14px, 1.71, 00.03em);
             margin-bottom: 9px;
             font-family: 'Roboto';
             font-style: normal;
             color: #FFFFFF;
         }
-    &_info {
+    &__info {
             @include font (400, 14px, 1.71, 00.03em);
             margin-bottom: 9px;
             font-family: 'Roboto';
@@ -26,10 +29,10 @@
                 }
 }
 
-.address_item:not(:last-child) {
+.address__item:not(:last-child) {
     margin-bottom: 9px;
 }
 
-.footer_logo-accent {
-    color: #FFFFFF;
+.logo:focus .footer__logo-accent {
+    color: $main-link-color;
 }

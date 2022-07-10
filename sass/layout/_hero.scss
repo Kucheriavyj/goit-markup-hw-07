@@ -6,7 +6,7 @@
     background: #2F303A;
 }
 
-.hero_title {
+.hero__title {
     @include font (900, 44px, 1.36, 00.06em);
     margin-left: 236px;
     max-width: 696px;
@@ -18,7 +18,7 @@
     color: #FFFFFF;
 }
 
-.overlay {
+.covering {
     max-width: 1600px;
     height: 600px;
     margin-left: auto;

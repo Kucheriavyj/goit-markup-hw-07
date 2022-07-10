@@ -1,4 +1,4 @@
-.section-heading {
+.heading-accent {
     background-color: #F5F4FA;
 }
 
@@ -7,15 +7,15 @@
     margin-bottom: 50px;
     text-align: center;
     color: $headingColor;
-    &-text {
+    &__list {
             display: flex;
         }
-    &-list {
+    &__title {
             @include font (500, 16px, 1.19, 00.03em);
             color: $headingColor;
             margin-bottom: $typicalMargin;
         }
-    &-title {
+    &__desc {
             border: 1px solid #EEEEEE;
             border-radius: 0px 0px 4px 4px;
             background: #FFFFFF;
@@ -23,35 +23,35 @@
             padding-top: 30px;
             padding-bottom: 30px;
         }
-    &-desc {
+    &__item {
             box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2),
                 0 1px 1px 0 rgba(0, 0, 0, 0.14),
                 0 1px 3px 0 rgba(0, 0, 0, 0.12);
         }
-    &-item {
+    &__text {
             @include font (400, 16px, 1.19, 00.03em);
             margin-bottom: 16px;
             color: #757575;
         }
 }
 
-.heading-desc:not(:last-child) {
+.heading__item:not(:last-child) {
     margin-right: 30px;
 }
 
 .actions {
     display: flex;
     justify-content: center;
-    &-list {
+    &__item {
             width: 44px;
             height: 44px;
         }
-    &-svg {
+    &__svg {
             fill: #AFB1B8;
         }
 }
 
-.actions-link {
+.actions__link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -67,11 +67,11 @@
             }
 }
 
-.actions-list:not(:last-child) {
+.actions__item:not(:last-child) {
     margin-right: 10px;
 }
 
-.actions-link:hover .actions-svg,
-.actions-link:focus .actions-svg {
+.actions__link:hover .actions__svg,
+.actions__link:focus .actions__svg {
     fill: $btn-focus-color;
 }

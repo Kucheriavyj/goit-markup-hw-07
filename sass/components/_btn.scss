@@ -23,12 +23,13 @@
     margin-right: 8px;
 }
 
-.container-button {
+.buttons {
     margin-bottom: 50px;
     display: flex;
     justify-content: center;
 }
-.hero_btn-service {
+
+.hero__service-btn {
     @include font (700, 16px, 1.88, 0.06em);
     display: inline-block;
     align-items: center;
@@ -47,7 +48,7 @@
         }
 }
 
-.modal_btn-submit {
+.modal__submit-btn {
     @include font (700, 16px, 1.88, 0.06em);
     width: 200px;
     height: 50px;
@@ -64,7 +65,8 @@
             background-color: $accentColor;
         }
 }
-.btn_subscribe {
+
+.subscribe__btn {
     @include font (700, 16px, 1.88, 0.06em);
     display: flex;
     text-align: center;

@@ -1,15 +1,15 @@
-.section .clients_list {
+.section .clients__list {
     display: flex;
     margin-right: -30px;
 }
 
-.clients_item {
+.clients__item {
     display: flex;
     flex-basis: calc(100%/6);
     margin-right: 30px;
 }
 
-.clients_link {
+.clients__link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,14 +28,13 @@
         }
 }
 
-.clients_title {
+.clients {
     @include font (700, 36px, 1.17, 00.03em);
     margin-bottom: 50px;
     text-align: center;
     color: $headingColor;
-}
-
-.clients_svg {
-    display: block;
-    fill: currentColor;
+    &__svg {
+        display: block;
+        fill: currentColor;
+        }
 }

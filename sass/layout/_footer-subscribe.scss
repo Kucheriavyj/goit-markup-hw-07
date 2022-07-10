@@ -2,18 +2,18 @@
     display: block;
     padding-top: 12px;
     margin-left: 93px;
-    &_title {
+    &__title {
             @include font (700, 14px, 1.14, 00.03em);
             display: block;
             margin-bottom: 20px;
             text-transform: uppercase;
             color: $btn-focus-color;
         }
-    &_field {
+    &__field {
             position: relative;
             display: flex;
         }
-    &_input {
+    &__input {
             display: flex;
             padding: 15px 16px;
             width: 358px;
@@ -24,7 +24,7 @@
             color: $btn-focus-color;
             background-color: #2F303A;
         }
-    &_label {
+    &__label {
             @include font (400, 16px, 1.25, 00.03em);
             position: absolute;
             top: 15px;
@@ -36,7 +36,7 @@
         }
 }
 
-.btn_subscribe::after {
+.subscribe__btn::after {
     content: "";
     width: 24px;
     height: 24px;
@@ -45,7 +45,7 @@
     background-image: url(../images/icon.svg/telegram.svg);
 }
 
-.subscribe_input:focus+.subscribe_label,
-.subscribe_input:not(:placeholder-shown)+.subscribe_label {
+.subscribe__input:focus + .subscribe__label,
+.subscribe__input:not(:placeholder-shown)+.subscribe__label {
     transform: translateX(-80px);
 }
